@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Sistem Informasi Gereja Katolik</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:rgb(213, 250, 255);">
+
+<header>
+  <img src="logo.jpg" class="float-left" alt="Responsive image" width="240" height="240">
+  <img src="gereja.png" class="float-right" alt="Responsive image" width="240" height="240">
+	<div class="jumbotron text-center bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+          <h1><p class="text-white">Selamat Datang di Website Sistem Informasi Geografis</p></h1>
+          <div class="lead"><p class="text-black font-weight-bold">Gereja Katolik Makassar</p></div>
+          <!--<img src="logo.jpg" class="img-fluid-left img-thumbnail" alt="Responsive image">-->
+        </div>
+      </div>
+		</div>
+	</div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="landingpage.html">SIG Gereja Katolik Makassar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="home.php">Home </a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="list_gereja.php">List Gereja Katolik<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tentang
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sejarah.html">Sejarah Gereja Katolik Roma</a>
+            <a class="dropdown-item" href="tentang.html">Tentang Web</a>
+
+            
+          </div>
+        </li>
+        <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link Mati</a>
+      </li>  -->
+    </ul>
+
+    <div class="dropdown col-form-label-lg">
+      <script src="dropdown.js"></script>
+      <link href="dropdown.css" rel="stylesheet" type="text/css">
+      <button onclick="myFunction()" class="dropbtn">Cari</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="andalas.html">Gereja Andalas</a>
+        <a href="asisi.html">Gereja Asisi</a>
+        <a href="gotong.html">Gereja Gotong-Gotong</a>
+        <a href="kare.html">Gereja Kare</a>
+        <a href="katedral.html">Gereja Katedral</a>
+        <a href="mamajang.html">Gereja Mamajang</a>
+        <a href="mariso.html">Gereja Mariso</a>
+        <a href="sudiang.html">Gereja Sudiang</a>
+        <a href="tanjung.html">Gereja Tanjung</a>
+        <a href="tello.html">Gereja Tello</a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+
+<div class="container">
+<div class="col-md-12 col-md-offset-2">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="gambar/mamajang1.jpg" alt="mamajang" width="100%" height="100%">
+      </div>
+      <div class="carousel-item">
+        <img src="gambar/mamajang2.jpg" alt="mamajang" width="100%" height="100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+<br><br>    
+<h1 style="background-color:rgb(213, 250, 255);"><center>Paroki Santa Perawan Maria Diangkat Ke Surga - Mamajang</center></h1>
+<div class="col-md-12 mission-center text-justify">
+<br><br>   
+    <blockquote class="blockquote">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paroki Mamajang atau dikenal juga dengan 
+          <b>Gereja Santa Perawan Maria Diangkat Ke Surga</b> merupakan salah satu gereja 
+          yang berada dalam naungan Keuskupan Agung Makassar. Paroki Mamajang memulai aktivitasnya pada tanggal 
+          <b><u>1 November 1947</u></b>. Paroki Mamajang berlokasi pada Jalan Tupai No. 1, Makassar, Sulawesi Selatan.
+        Paroki Mamajang saat ini dipimpin oleh <u>Pastor Fanny Stephanus Manengkey, MSC sebagai Pastor Paroki</u>. 
+        Sebagai rekan dalam memberikan pelayanan bagi umat, Pastor Paroki dibantu oleh <u>Pastor Rekan, 
+        yaitu Pastor Gonsvel Simon Manumpil, MSC.</u>       
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jumlah umat pada Paroki Mamajang saat ini mencapai kurang lebih 2200 umat yang tersebar ke dalam 15 rukun. 
+        5 Wilayah dan 15 rukun yang termasuk dalam cakupan Paroki Mamajang, adalah : 
+
+        <table class="table table-bordered table-primary table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Wilayah</th>
+              <th>Rukun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">1</td>
+              <td rowspan="3">Wilayah I</td>
+              <td>Rukun St. Theresia</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Regina</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Bernadeth</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3">2</td>
+              <td rowspan="3">Wilayah II</td>
+              <td>Rukun St. Agnes</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Maria</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Scolastika</td>
+            </tr>
+            
+            <tr>
+              <td rowspan="3">3</td>
+              <td rowspan="3">Wilayah III</td>
+              <td>Rukun St. Angela</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Anna</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Elisabeth</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3">4</td>
+              <td rowspan="3">Wilayah IV</td>
+              <td>Rukun St. Felisitas</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Katarina</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Monika</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3">5</td>
+              <td rowspan="3">Wilayah V</td>
+              <td>Rukun St. Agatha</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Sesilia</td>
+            </tr>
+            <tr>
+              <td>Rukun St. Lucia</td>
+            </tr>
+
+          </tbody>
+        </table>
+    </blockquote></p>
+</div>
+
+<br><br>
+<h1><b>Visi Paroki Mamajang</b></h1>
+<br>
+<div class="col-md-12 mission-center text-justify">
+    <blockquote class="blockquote">
+        <p>&nbsp;&nbsp;Sebagai salah satu gereja lokal dalam cakupan Keuskupan Agung Mamajang, 
+            visi dari Paroki Mamajang menurut Sinode Diosesan KAMS 2012 adalah:</p>
+<p>
+    <b><i>"Gereja Lokal KAMS, yang bersosok kawanan kecil tersebar, 
+        sebagai pelayan berdasarkan dan berpolakan Yesus Kristus, 
+        yang terus menerus membaharui diri, mewartakan Kerajaan Allah dengan meresapi tata dunia, 
+        sehingga segala-galanya menjadi baik."</i></b>
+</p>
+</blockquote>
+</div>
+
+<br><br>
+<h1><b>Misi Paroki Mamajang</b></h1>
+<br>
+<div class="col-md-12 mission-center text-justify">
+    <blockquote class="blockquote">
+        <p><i>
+        <ol type="1">
+            <li>Mempersiapkan dan meningkatkan spiritualitas, kemampuan dan keterampilan pelayan pastoral yang berdedikasi, komit, profesional, dinamis, kreatif dan tanggap terhadap tuntutan zaman.</li>
+            <li>Menata penyelenggaraan, pengelolaan dan pelaksanaan pendidikan yang berkualitas, mandiri, solider, dan tanggap terhadap tuntutan zaman seturut nilai-nilai katolik.</li>
+            <li>Melestarikan nilai-nilai luhur budaya dan mengupayakan inkulturasi iman</li>
+            <li>Membangun kesadaran dan tanggung jawab sosial politik yang bermartabat di kalangan umat dalam hidup berbangsa dan bernegara.</li>
+            <li>Mewujudkan keluarga sebagai gereja rumah tangga <u>(ecclesia domestica)</u> yang berpola keluarga kudus Nasaret, tempat nilai-nilai manusiawi, iman dan tradisi katolik tersemaikan.</li>
+            <li>Membangun gerakan budaya hidup bersih dan sehat, dan menggalang kepedulian kepada orang sakit yang tidak mampu.</li>
+            <li>Mendorong kemandirian umat/masyarakat ekonomi lemah dengan cara mendukung pemberdayaan potensi ekonominya.</li>
+            <li>Mengupayakan tatakelola yang profesional, transparan dan akuntabel atas seluruh aset gereja demi pelayanan pastoral yang lebih baik</li>
+        </ol> 
+    </i></p>
+</blockquote>
+</div>
+  
+<br><br>
+<h1><b>Kelompok-Kelompok Kategorial</b></h1>
+<br>
+<h4><b>Kategorial yang ada dan aktif pada Paroki ini terdiri atas:</b></h4>
+<div class="col-md-12 mission-center text-justify">
+    <blockquote class="blockquote">
+        <p>
+          <table class="table table-bordered table-primary table-striped">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Kelompok Kategorial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>WKRI</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Legio Maria Senior</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Legio Maria Junior</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>OMK (Orang Muda Katolik)</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Karismatik</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Sekami/Sekolah Minggu</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Putra Putri Altar (PPA)</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>THS/THM</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Marriage Encounter</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+</blockquote>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-primary justify-content-center">
+  <img src="logo.jpg" alt="Logo" style="width:40px;">
+    <b>© 2021 COPYRIGHT SHEREEN BEATRIX ADHIWIDJAJA (1861022)</b>
+</nav>
+
+</head>
+<body>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

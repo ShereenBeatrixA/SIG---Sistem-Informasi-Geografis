@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Sistem Informasi Gereja Katolik</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:rgb(213, 250, 255);">
+  <audio src="kasih.mp3" autoplay="true" hidden="hidden" controls loop></audio>
+<header>
+  <img src="logo.jpg" class="float-left" alt="Responsive image" width="240" height="240">
+  <img src="gereja.png" class="float-right" alt="Responsive image" width="240" height="240">
+	<div class="jumbotron text-center bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+          <h1><p class="text-white">Selamat Datang di Website Sistem Informasi Geografis</p></h1>
+          <div class="lead"><p class="text-black font-weight-bold">Gereja Katolik Makassar</p></div>
+          <!--<img src="logo.jpg" class="img-fluid-left img-thumbnail" alt="Responsive image">-->
+        </div>
+      </div>
+		</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="landingpage.html">SIG Gereja Katolik Makassar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="list_gereja.php">List Gereja Katolik</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tentang
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sejarah.html">Sejarah Gereja Katolik Roma</a>
+            <a class="dropdown-item" href="tentang.html">Tentang Web</a>
+
+            
+          </div>
+        </li>
+        <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link Mati</a>
+      </li>  -->
+    </ul>
+
+    
+    <div class="dropdown col-form-label-lg">
+      <script src="dropdown.js"></script>
+      <link href="dropdown.css" rel="stylesheet" type="text/css">
+      <button onclick="myFunction()" class="dropbtn">Cari</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="andalas.html">Gereja Andalas</a>
+        <a href="asisi.html">Gereja Asisi</a>
+        <a href="gotong.html">Gereja Gotong-Gotong</a>
+        <a href="kare.html">Gereja Kare</a>
+        <a href="katedral.html">Gereja Katedral</a>
+        <a href="mamajang.html">Gereja Mamajang</a>
+        <a href="mariso.html">Gereja Mariso</a>
+        <a href="sudiang.html">Gereja Sudiang</a>
+        <a href="tanjung.html">Gereja Tanjung</a>
+        <a href="tello.html">Gereja Tello</a>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+<style type='text/css'>
+    #peta {
+    width: 100%;
+    height: 600px;
+  
+  } </style>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+      <script type="text/javascript">
+       
+       (function() {
+     window.onload = function() {
+   var map;
+       //Parameter Google maps
+       var options = {
+         zoom: 9, //level zoom
+         //posisi tengah peta
+         center: new google.maps.LatLng(-5.1517981,119.4167816,12),
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+       };
+       
+        // Buat peta di 
+       var map = new google.maps.Map(document.getElementById('peta'), options);
+        // Tambahkan Marker 
+        var locations = [
+                            ['<a href="andalas.html">Gereja Andalas <br> Jam Misa Hari Minggu = 7.00 WITA</a>', -5.1288424,119.4184751, '<a>Jam Misa Hari Minggu = Pagi 07:00 WITA</a>'],
+                            ['<a href="gotong.html">Gereja Gotong-Gotong</a>', -5.142677,119.4209127],
+                            ['<a href="kare.html">Gereja Kare</a>', -5.1402946,119.4894739],
+                            ['<a href="katedral.html">Gereja Katedral</a>', -5.1361111,119.41],
+                            ['<a href="mamajang.html">Gereja Mamajang</a>', -5.1563613,119.4213579,17],
+                            ['<a href="mariso.html">Gereja Mariso</a>', -5.1598521,119.4113442],
+                            ['<a href="asisi.html">Gereja Asisi</a>', -5.1660449,119.4462018],
+                            ['<a href="tello.html">Gereja Tello</a>', -5.1483212,119.463076],   
+                            ['<a href="sudiang.html">Gereja Sudiang</a>', -5.0810587,119.5236832],
+                            ['<a href="tanjung.html">Gereja Tanjung Bunga</a>', -5.176162,119.397395],   
+     
+    ];
+         var infowindow = new google.maps.InfoWindow();
+   
+       var marker, i;
+        /* kode untuk menampilkan banyak marker */
+       for (i = 0; i < locations.length; i++) {  
+         marker = new google.maps.Marker({
+           position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+           map: map,
+           animation: google.maps.Animation.BOUNCE
+         });
+        /* menambahkan event clik untuk menampikan
+             infowindows dengan isi sesuai dengan
+           marker yang di klik */
+           
+         google.maps.event.addListener(marker, 'click', (function(marker, i) {
+           return function() {
+             infowindow.setContent(locations[i][0], locations[i][3]);
+            
+             infowindow.open(map, marker);
+             //infowindow.location.href=marker.position;
+           }
+         })(marker, i));
+       }
+     };
+   })();
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<div id="peta"></div>
+<nav class="navbar navbar-expand-sm bg-primary justify-content-center">
+  <img src="logo.jpg" alt="Logo" style="width:40px;">
+    <b>© 2021 COPYRIGHT SHEREEN BEATRIX ADHIWIDJAJA (1861022)</b>
+</nav>
+ <Link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+  
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
